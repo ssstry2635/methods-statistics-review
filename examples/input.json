@@ -1,0 +1,72 @@
+{
+  "case_id": "fictional-flow",
+  "sources": [
+    {
+      "id": "doc",
+      "path": "source.txt"
+    }
+  ],
+  "checks": [
+    {
+      "id": "flow",
+      "kind": "sample_flow",
+      "scope": "All randomized units",
+      "applicable": true,
+      "enrolled": 100,
+      "disjoint_exclusions": [
+        3,
+        2
+      ],
+      "analyzed": 94,
+      "anchors": [
+        {
+          "source_id": "doc",
+          "start": 2,
+          "end": 2,
+          "quote": "100 units"
+        },
+        {
+          "source_id": "doc",
+          "start": 3,
+          "end": 3,
+          "quote": "94 analyzed units"
+        }
+      ]
+    },
+    {
+      "id": "rate",
+      "kind": "percentage",
+      "scope": "Separate complete sample",
+      "applicable": true,
+      "numerator": 1,
+      "denominator": 13,
+      "reported": "7.7",
+      "places": 1,
+      "anchors": [
+        {
+          "source_id": "doc",
+          "start": 4,
+          "end": 4,
+          "quote": "7.7% for one out of 13 units"
+        }
+      ]
+    },
+    {
+      "id": "dependency",
+      "kind": "unit_independence",
+      "scope": "Three readings per randomized unit",
+      "applicable": true,
+      "inferential_unit": "randomized unit",
+      "analysis_unit": "reading",
+      "dependence_handling": "unknown",
+      "anchors": [
+        {
+          "source_id": "doc",
+          "start": 5,
+          "end": 5,
+          "quote": "three readings per randomized unit"
+        }
+      ]
+    }
+  ]
+}

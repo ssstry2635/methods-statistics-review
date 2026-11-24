@@ -1,0 +1,5 @@
+Fictional demonstration for software testing.
+The trial enrolled 100 units, with 3 and 2 disjoint exclusions.
+The report gives 94 analyzed units.
+A separate result reports 7.7% for one out of 13 units.
+The observation contains three readings per randomized unit.
